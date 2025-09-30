@@ -1,19 +1,22 @@
 # Sobre Meu Projeto
 
-Este projeto tem como objetivo oferecer soluções inovadoras para facilitar o desenvolvimento e a gestão de aplicações.
+Este projeto tem como objetivo oferecer soluções inovadoras para diminuir casos de despedicio de comida.
 
 ## Funcionalidades
 
 - Cadastro de usuários
-- Autenticação segura
+- Cadastro de empresas
 - Dashboard interativo
-- Relatórios personalizados
+- Desing simples e moderno
 
 ## Autores
 
-- Nome do Autor 1
-- Nome do Autor 2
+- Braian Henrique Rodrigues Silva
+- Matheus Costa Lustosa Carvalho Lacerda
+- Hector Alejandro Perez Corniel
+- Nelson de Almeida Sampaio
+- Gustavo Galdino dos Santos
 
 ## O que você encontra aqui
 
-Neste repositório você encontrará o código-fonte, documentação e exemplos de uso para todas as funcionalidades implementadas.
+Neste repositório você encontrará o código-fonte, documentação e exemplos de uso para todas as funcionalidades implementadas.   
