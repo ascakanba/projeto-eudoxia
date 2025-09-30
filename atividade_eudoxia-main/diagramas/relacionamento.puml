@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+entity Cliente {
+    id : integer<<PK>>
+    --
+    Nome: string
+    Endereço: string
+}
+entity Restaurante {
+    id : integer<<PK>>
+    --
+    Nome: string
+    Enderço: string
+}
+entity Aplicativo{
+}
+entity Cardapio{
+    id: integer<<PK>>
+    --
+    idProdutos: integer  
+}
+entity Produto{
+    id: integer <<PK>>
+    --
+    Nome: string
+    Preço: integer
+    descrição: varchar
+}
+
+Restaurante ||--|| Cardapio : " Possui"
+Cardapio ||--o{ Produto : " Contem"
+Cliente ||--|| Aplicativo : " Requisita"
+Aplicativo ||--o{ Restaurante : "Consulta"
+Cliente ||--o{ Produto : "Agenda"
+@enduml

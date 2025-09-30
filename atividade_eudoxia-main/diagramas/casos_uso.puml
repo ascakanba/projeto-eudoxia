@@ -1,0 +1,34 @@
+@startuml
+skinparam actorStyle Hollow
+
+usecase/ (cadastro usuario) as (ca)
+usecase/ (cadastro de item do cardapio) as (cc)
+usecase/ (fazer pre encomenda) as (fe)
+usecase/ (pagar pedido) as (pp)
+usecase/ (acompanhar pedido) as (ap)
+usecase/ (cancelar pre encomenda) as (ce)
+usecase/ (receber pagamento) as (rp)
+usecase/ (fazer pagamento) as (fa)
+
+actor/ :administrador: as admin 
+actor/ :usuario_comum: as user 
+actor/ :funcionario: as employee
+'administrador
+:admin: -left-> (ca)
+:admin: -right-> (cc)
+:admin: -up-> (ap)
+:admin: --> (rp)
+:admin: --> (ce)
+'ligacoes de usurio
+:user: -left-> (fe)
+:user: -up-> (pp)
+:user: --> (ce)
+:user: --> (fa)
+:user: -up-> (ap)
+'funcionario
+:employee: -left-> (cc)
+:employee: --> (rp)
+:employee: --> (ce)
+:employee: -up-> (ap)
+
+@enduml

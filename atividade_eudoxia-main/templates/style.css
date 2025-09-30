@@ -1,0 +1,62 @@
+/* Estilos personalizados para o Prato Feito */
+
+.hero-section {
+    background: linear-gradient(135deg, #198754 0%, #20c997 100%);
+    color: white;
+}
+
+.hero-section h1 {
+    color: white !important;
+}
+
+.hero-section .btn-success {
+    background-color: white;
+    color: #198754;
+    border: none;
+}
+
+.hero-section .btn-success:hover {
+    background-color: #f8f9fa;
+}
+
+.marmita-icon {
+    font-size: 3rem;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+.bg-success {
+    background-color: #198754 !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 2rem 1rem !important;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+}
