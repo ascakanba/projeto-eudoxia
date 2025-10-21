@@ -18,6 +18,12 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 login_manager.login_message = 'Por favor, faça login para acessar esta página.'
 
+# Defina o caminho base (o diretório onde está app.py)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Crie a aplicação Flask especificando o caminho da pasta templates
+app = Flask(__name__, template_folder=os.path.join(BASE_DIR, 'templates'))
+
 
 #----------------------------------------------------
 #  MODELS
